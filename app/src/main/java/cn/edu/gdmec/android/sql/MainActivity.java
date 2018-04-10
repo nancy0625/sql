@@ -96,31 +96,32 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.tv_back:
                 this.finish();
                 break;
-            case R.id.tv_address1:
+            case R.id.rl_address1:
+
                 String address1 = tv_address1.getText().toString();
                 Bundle bdad1 = new Bundle();
                 bdad1.putString("content",address1);
-                bdad1.putString("title","近程");
+                bdad1.putString("title","近程地址");
                 bdad1.putInt("flag",11);
                 enterActivityForResult(ChangeUserInfoActivity.class,CHANGE_ADDRESS1,bdad1);
                 break;
-            case R.id.tv_address2:
+            case R.id.rl_address2:
                 String address2 = tv_address2.getText().toString();
                 Bundle bdad2 = new Bundle();
                 bdad2.putString("content",address2);
-                bdad2.putString("title","中程");
+                bdad2.putString("title","中程地址");
                 bdad2.putInt("flag",12);
                 enterActivityForResult(ChangeUserInfoActivity.class,CHANGE_ADDRESS2,bdad2);
                 break;
-            case R.id.tv_address3:
+            case R.id.rl_address3:
                 String address3 = tv_address3.getText().toString();
                 Bundle bdad3 = new Bundle();
                 bdad3.putString("content",address3);
-                bdad3.putString("title","远程");
+                bdad3.putString("title","远程地址");
                 bdad3.putInt("flag",13);
                 enterActivityForResult(ChangeUserInfoActivity.class,CHANGE_ADDRESS3,bdad3);
                 break;
-            case R.id.tv_phoneNum1:
+            case R.id.rl_phoneNum1:
                 String phoneNum1 = tv_phoneNum1.getText().toString();
                 Bundle bdpnd1 = new Bundle();
                 bdpnd1.putString("content",phoneNum1);
@@ -128,7 +129,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 bdpnd1.putInt("flag",21);
                 enterActivityForResult(ChangeUserInfoActivity.class,CHANGE_PHONE1,bdpnd1);
                 break;
-            case R.id.tv_phoneNum2:
+            case R.id.rl_phoneNum2:
                 String phoneNum2 = tv_phoneNum2.getText().toString();
                 Bundle bdpnd2 = new Bundle();
                 bdpnd2.putString("content",phoneNum2);
@@ -136,7 +137,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 bdpnd2.putInt("flag",22);
                 enterActivityForResult(ChangeUserInfoActivity.class,CHANGE_PHONE2,bdpnd2);
                 break;
-            case R.id.tv_phoneNum3:
+            case R.id.rl_phoneNum3:
                 String phoneNum3 = tv_phoneNum3.getText().toString();
                 Bundle bdpnd3 = new Bundle();
                 bdpnd3.putString("content",phoneNum3);
