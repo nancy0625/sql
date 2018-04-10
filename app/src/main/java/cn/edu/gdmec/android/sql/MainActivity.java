@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 String address1 = tv_address1.getText().toString();
                 Bundle bdad1 = new Bundle();
                 bdad1.putString("content",address1);
-                bdad1.putString("title","近程地址");
+                bdad1.putString("title","输入地址(近的)");
                 bdad1.putInt("flag",11);
                 enterActivityForResult(ChangeUserInfoActivity.class,CHANGE_ADDRESS1,bdad1);
                 break;
@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 String address2 = tv_address2.getText().toString();
                 Bundle bdad2 = new Bundle();
                 bdad2.putString("content",address2);
-                bdad2.putString("title","中程地址");
+                bdad2.putString("title","输入地址(较近的)");
                 bdad2.putInt("flag",12);
                 enterActivityForResult(ChangeUserInfoActivity.class,CHANGE_ADDRESS2,bdad2);
                 break;
@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 String address3 = tv_address3.getText().toString();
                 Bundle bdad3 = new Bundle();
                 bdad3.putString("content",address3);
-                bdad3.putString("title","远程地址");
+                bdad3.putString("title","输入地址(远的)");
                 bdad3.putInt("flag",13);
                 enterActivityForResult(ChangeUserInfoActivity.class,CHANGE_ADDRESS3,bdad3);
                 break;

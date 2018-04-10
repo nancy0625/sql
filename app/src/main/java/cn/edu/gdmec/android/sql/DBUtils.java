@@ -44,7 +44,7 @@ public class DBUtils {
         String sql = "SELECT * FROM "+SQLiteHelper.U_USERINFO;//+" WHERE userName=? ";
         Cursor cursor = db.rawQuery(sql,null);//new String[]{userName}
         UserBean bean = null;
-        while (cursor.moveToFirst()){
+        if (cursor.moveToFirst()){
             bean = new UserBean();
            // bean.userName = cursor.getString(cursor.getColumnIndex("userName"));
             bean.address1 = cursor.getString(cursor.getColumnIndex("address1"));

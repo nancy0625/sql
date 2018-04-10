@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:text="近程地址："
+            android:text="输入地址(近的):"
             android:textColor="#000000"
             android:textSize="16sp"/>
         <TextView
@@ -74,7 +74,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:text="中程地址："
+            android:text="输入地址(较近的):"
             android:textColor="#000000"
             android:textSize="16sp"/>
         <TextView
@@ -131,7 +131,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:text="远程地址："
+            android:text="输入地址(远的):"
             android:textColor="#000000"
             android:textSize="16sp"/>
         <TextView
